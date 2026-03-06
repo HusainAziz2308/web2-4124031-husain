@@ -19,3 +19,11 @@ Route::get('/nukhi', function () {
         <p>Saya siap belajar Laravel! 🚀</p>
     ';
 });
+Route::get('/affani', function () {
+
+    return '<h1>Halo! Nama saya Affani Yusuf</h1>
+
+            <p>NIM: 4119064 | Prodi: Sistem Informasi</p>
+
+            <p>Saya siap belajar Laravel! 🚀</p>';
+});
