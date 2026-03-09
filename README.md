@@ -1,10 +1,11 @@
-# web2-4124031-husain
+# Restock Obat
 
 ## 👤 Identitas
-| Keterangan | Isi |
+| Nama | NIM |
 |------------|-----|
-| Nama | Husain Aziz Al Rosyid |
-| NIM | 4124031 |
+| Husain Aziz Al Rosyid | 4124031 |
+| Husain Aziz Al Rosyid | 4124031 |
+| Husain Aziz Al Rosyid | 4124031 |
 
 ---
 
