@@ -8,6 +8,10 @@ Route::get('/', function () {
     return '<h1>Selamat datang di Apotek Online</h1><p>Home</p>';
 })->name('home.index');
 
+Route::get('/about', function () {
+    return '<h1>Tentang Kami</h1><p>Informasi tentang apotek.</p>';
+})->name('about.index');
+
 Route::get('/contact', function () {
     return '<h1>Kontak</h1><p>Hubungi kami: 0812-xxxx-xxxx</p>';
 })->name('contact.index');
