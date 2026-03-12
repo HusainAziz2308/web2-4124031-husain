@@ -13,6 +13,14 @@ Route::get('/contact', function () {
 })->name('contact.index');
 
 // perkenalan
+
+Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('/about', function () {
+    return '<h1>tentang Kami</h1><p>Informasi tentang apotek</p>';
+})->name('about.index');
 Route::get('/perkenalan', function () {
     return '
         <h1>Halo! Nama Saya Husain Aziz Al Rosyid</h1>
@@ -40,3 +48,5 @@ Route::get('/affani', function () {
 Route::get('/katalog', [KatalogController::class, 'index'])->name('katalog.index');
 Route::get('/katalog/{id}', [KatalogController::class, 'show'])->name('katalog.show');
 
+Route::get('/profil', [ProfilController::class, 'index'])->name('profil.index');
+Route::get('/profil/{nim}', [ProfilController::class, 'show'])->name('profil.show');
