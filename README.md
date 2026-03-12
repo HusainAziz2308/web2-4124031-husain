@@ -4,8 +4,8 @@
 | Nama | NIM |
 |------------|-----|
 | Husain Aziz Al Rosyid | 4124031 |
-| Husain Aziz Al Rosyid | 4124031 |
-| Husain Aziz Al Rosyid | 4124031 |
+| Nukhi Alvin Rahmahdani | 4124044 |
+| Affani Yusuf | 4119064 |
 
 ---
 
