@@ -2,6 +2,17 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfilController;
+use App\Http\Controllers\KatalogController;
+// statis
+Route::get('/', function () {
+    return '<h1>Selamat datang di Apotek Online</h1><p>Home</p>';
+})->name('home.index');
+
+Route::get('/contact', function () {
+    return '<h1>Kontak</h1><p>Hubungi kami: 0812-xxxx-xxxx</p>';
+})->name('contact.index');
+
+// perkenalan
 
 Route::get('/', function () {
     return view('welcome');
@@ -32,6 +43,10 @@ Route::get('/affani', function () {
 
             <p>Saya siap belajar Laravel! 🚀</p>';
 });
+
+// dinamis
+Route::get('/katalog', [KatalogController::class, 'index'])->name('katalog.index');
+Route::get('/katalog/{id}', [KatalogController::class, 'show'])->name('katalog.show');
 
 Route::get('/profil', [ProfilController::class, 'index'])->name('profil.index');
 Route::get('/profil/{nim}', [ProfilController::class, 'show'])->name('profil.show');
