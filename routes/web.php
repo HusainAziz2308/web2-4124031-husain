@@ -63,3 +63,6 @@ Route::get('/katalog/{id}', [KatalogController::class, 'show'])->name('katalog.s
 
 Route::get('/profil', [ProfilController::class, 'index'])->name('profil.index');
 Route::get('/profil/{nim}', [ProfilController::class, 'show'])->name('profil.show');
+
+Route::get('/katalog/cari/{keyword}', [KatalogController::class, 'search'])->name('katalog.search');
+Route::get('/katalog/kategori/{kategori}', [KatalogController::class, 'kategori'])->name('katalog.kategori');

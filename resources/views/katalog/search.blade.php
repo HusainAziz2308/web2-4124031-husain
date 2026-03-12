@@ -3,19 +3,15 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Katalog Produk</title>
+    <title>Hasil Pencarian: {{ $keyword }}</title>
 </head>
 
 <body>
-    <h1>Katalog Produk</h1>
-    <form action="" onsubmit="this.action='/katalog/cari/'+document.getElementById('keyword').value">
-        <label>Cari Obat:</label>
-        <input type="text" id="keyword" required>
-        <button type="submit">Cari</button>
-    </form>
+    <h1>Hasil Pencarian Obat</h1>
+    <p>Menampilkan hasil untuk kata kunci: <strong>{{ $keyword }}</strong></p>
+    <hr>
 
-    <br>
-
+    @if(count($products) > 0)
     <ul>
         @foreach($products as $product)
         <li>
@@ -25,6 +21,12 @@
         </li>
         @endforeach
     </ul>
+    @else
+    <p style="color: red;">Maaf, obat "{{ $keyword }}" tidak ditemukan.</p>
+    @endif
+
+    <br>
+    <a href="{{ route('katalog.index') }}">⬅ Kembali ke Katalog Lengkap</a>
 </body>
 
 </html>

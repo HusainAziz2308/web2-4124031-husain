@@ -37,4 +37,30 @@ class KatalogController extends Controller
 
         return view('katalog.show', compact('product'));
     }
+
+    public function search($keyword)
+    {
+        $products = [
+            ['id' => 1, 'nama' => 'Paracetamol', 'harga' => 3500],
+            ['id' => 2, 'nama' => 'Amoxicillin', 'harga' => 6000],
+            ['id' => 3, 'nama' => 'Ibuprofen', 'harga' => 4000],
+            ['id' => 4, 'nama' => 'Salep Scabimite', 'harga' => 80000],
+            ['id' => 5, 'nama' => 'Sanmol Syrup', 'harga' => 18000],
+        ];
+
+        $hasilCari = array_filter($products, function ($item) use ($keyword) {
+            return str_contains(strtolower($item['nama']), strtolower($keyword));
+        });
+
+
+        return view('katalog.search', [
+            'products' => $hasilCari,
+            'keyword' => $keyword
+        ]);
+    }
+
+    public function kategori($kategori)
+    {
+        return "<h1>Kategori: $kategori</h1><p>Menampilkan grup obat $kategori</p><br><a href='" . route('katalog.index') . "'>Kembali</a>";
+    }
 }
