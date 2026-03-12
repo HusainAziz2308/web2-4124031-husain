@@ -45,6 +45,18 @@ Route::get('/contact', function () {
     return '<h1>Kontak</h1><p>Hubungi kami: 0812-xxxx-xxxx</p>';
 })->name('contact.index');
 
+Route::get('/faq', function () {
+    return '<h1>FAQ Apotek</h1><p>Pertanyaan yang sering diajukan pelanggan.</p>';
+})->name('faq.index');
+
+Route::get('/panduan', function () {
+    return '<h1>Panduan</h1><p>Cara memesan obat dan menebus resep dokter.</p>';
+})->name('panduan.index');
+
+Route::get('/promo', function () {
+    return '<h1>Promo Apotek</h1><p>Diskon 20% untuk semua produk multivitamin hari ini!</p>';
+})->name('promo.index');
+
 // dinamis
 Route::get('/katalog', [KatalogController::class, 'index'])->name('katalog.index');
 Route::get('/katalog/{id}', [KatalogController::class, 'show'])->name('katalog.show');
