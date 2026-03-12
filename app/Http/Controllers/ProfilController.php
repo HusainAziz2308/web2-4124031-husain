@@ -13,16 +13,34 @@ class ProfilController extends Controller
                 'nama' => 'Nukhi Alvin Rahmahdani',
                 'nim' => '4124044',
                 'program_studi' => 'Sistem Informasi',
+                'semester' => '4',
+                'keahlian' => [
+                    'Desain Basis Data',
+                    'HTML'
+                ],
             ],
             [
                 'nama' => 'Husain Aziz Al Rosyid',
                 'nim' => '4124031',
                 'program_studi' => 'Sistem Informasi',
+                'semester' => '4',
+                'keahlian' => [
+                    'Pemrograman Web',
+                    'Desain UI/UX',
+                    'Github Project Management',
+                    'Jaringan Komputer'
+                ],
             ],
             [
                 'nama' => 'Affani Yusuf',
                 'nim' => '4119064',
                 'program_studi' => 'Sistem Informasi',
+                'semester' => '10',
+                'keahlian' => [
+                    'Pemrograman Web',
+                    'Basis Data',
+                    'Jaringan Komputer'
+                ],
             ]
         ];
 
@@ -36,16 +54,34 @@ class ProfilController extends Controller
                 'nama' => 'Nukhi Alvin Rahmahdani',
                 'nim' => '4124044',
                 'program_studi' => 'Sistem Informasi',
+                'semester' => '4',
+                'keahlian' => [
+                    'Desain Basis Data',
+                    'HTML'
+                ],
             ],
             [
                 'nama' => 'Husain Aziz Al Rosyid',
                 'nim' => '4124031',
                 'program_studi' => 'Sistem Informasi',
+                'semester' => '4',
+                'keahlian' => [
+                    'Pemrograman Web',
+                    'Desain UI/UX',
+                    'Github Project Management',
+                    'Jaringan Komputer'
+                ],
             ],
             [
                 'nama' => 'Affani Yusuf',
                 'nim' => '4119064',
                 'program_studi' => 'Sistem Informasi',
+                'semester' => '10',
+                'keahlian' => [
+                    'Pemrograman Web',
+                    'Basis Data',
+                    'Jaringan Komputer'
+                ],
             ]
         ];
 
